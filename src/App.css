@@ -1,0 +1,28 @@
+/* Variables Globales de Marca (Design System) */
+:root {
+  --bg-color: #ffffff;
+  --text-primary: #1f2937;
+  --text-secondary: #4b5563;
+  --font-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+/* Reset base y aplicación de estilos globales */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: var(--font-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Forzamos a que los formularios utilicen la misma tipografía elegante */
+input, select, button, textarea {
+  font-family: inherit;
+}
+
+/* Limpieza global de enlaces */
+a {
+  text-decoration: none;
+}
