@@ -9,7 +9,7 @@ export const Home = () => (
         Diseña tu Futuro Financiero con <span style={{ color: '#2563eb' }}>Inteligencia Artificial</span>
       </h1>
       <p style={{ fontSize: '1.15rem', color: '#4b5563', maxWidth: '700px', margin: '0 auto 2.5rem auto', lineHeight: '1.6' }}>
-        Genera portafolios de inversión diversificados y adaptados a tu tolerancia al riesgo en cuestión de segundos, impulsado por el motor cognitivo de Google Gemini.
+        Genera portafolios de inversión diversificados y adaptados a tu tolerancia al riesgo en cuestión de segundos, impulsado por la IA.
       </p>
       
       <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap' }}>
@@ -63,7 +63,7 @@ export const Home = () => (
           </div>
           <h3 style={{ fontSize: '1.2rem', color: '#111827', margin: '0 0 0.5rem 0' }}>100% Privado y Seguro</h3>
           <p style={{ color: '#6b7280', fontSize: '0.95rem', lineHeight: '1.5', margin: 0 }}>
-            No almacenamos tus datos en servidores externos. Tu API Key de Gemini se guarda localmente en tu propio dispositivo.
+            No almacenamos tus datos en servidores externos. Tu API Key se guarda localmente en tu propio dispositivo.
           </p>
         </div>
 

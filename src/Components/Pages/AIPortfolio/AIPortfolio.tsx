@@ -140,7 +140,9 @@ IMPORTANTE: Al final de tu respuesta, debes incluir obligatoriamente un bloque d
           </div>
 
           {/* Componente del Gráfico y Lista de Pesos */}
-          <PortfolioChart newData={portfolioData} />
+          <p className='print-hidden'>
+            <PortfolioChart newData={portfolioData} />  
+          </p>
         </div>
       )}
 

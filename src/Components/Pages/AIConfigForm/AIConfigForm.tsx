@@ -78,7 +78,7 @@ export const AIConfigForm = () => {
 
   return (
     <div style={{ maxWidth: '450px', margin: '2rem auto', padding: '1.5rem', border: '1px solid #e5e7eb', borderRadius: '8px', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }}>
-      <h2 style={{ marginTop: 0, color: '#1f2937' }}>Configuración del cerebro GEMINI IA</h2>
+      <h2 style={{ marginTop: 0, color: '#1f2937' }}>Configuración del cerebro IA</h2>
       <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
         
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>

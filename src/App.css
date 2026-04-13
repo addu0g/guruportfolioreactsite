@@ -26,3 +26,107 @@ input, select, button, textarea {
 a {
   text-decoration: none;
 }
+
+.siteTitle{
+  font-weight: 'bold'; 
+  font-size: '1.4rem';
+  color: '#0f172a'
+}
+
+.menuContainer {
+  padding: '1.2rem 2rem'; 
+  border-bottom: '1px solid #e5e7eb'; 
+  background-color: '#ffffff'; 
+  display: 'flex'; flex-direction: row;
+  justify-content: 'space-between';
+  align-items: 'center';
+  box-shadow: '0 1px 2px 0 rgba(0, 0, 0, 0.05)';
+}
+
+.menu{
+  display: 'flex'; 
+  gap: '2rem'; 
+  list-style: ''; 
+  margin: 0; 
+  padding: 0; 
+  align-items: 'center';
+}
+
+@media (max-width: 600px) {
+  .menuContainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* === Estilos Responsivos del Menú Lateral === */
+
+/* Ocultos por defecto en pantallas grandes (Monitores) */
+.hamburger-btn,
+.close-btn,
+.mobile-overlay {
+  display: none;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Reglas específicas para Teléfonos y Tablets pequeñas */
+@media (max-width: 768px) {
+  .hamburger-btn { display: block; }
+  .close-btn { display: block; align-self: flex-end; margin-bottom: 0.5rem; }
+  
+  .nav-menu {
+    position: fixed;
+    top: 0; right: 0;
+    height: 100vh;
+    width: 16rem; /* 256px */
+    background-color: var(--bg-color);
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1.5rem; gap: 1.5rem;
+    z-index: 50;
+    box-shadow: -4px 0 25px rgba(0, 0, 0, 0.15);
+    
+    /* Animación del drawer (menú lateral) */
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .nav-menu.is-open { transform: translateX(0); }
+  
+  .mobile-overlay.is-open {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(15, 23, 42, 0.5); /* Equivalente a bg-slate-900/50 */
+    z-index: 40;
+  }
+}
+
+/* === Estados de Navegación (Página Activa) === */
+.selected {
+  color: #66729b !important; /* Mismo azul que text-blue-600 */
+  font-weight: 700 !important;
+}
+.normal-btn {
+  color:rgb(0, 0, 0) !important;
+  background-color: #ffffff !important; /* Un tono de azul más oscuro */
+  border-radius: 5px !important;
+  padding: 15px !important;
+  width: 150px !important;
+}
+.selected-btn {
+  color:rgb(74, 182, 211) !important;
+  background-color: #ffffff !important; /* Un tono de azul más oscuro */
+  border-radius: 5px !important;
+  width: 150px !important;
+  padding: 15px !important;
+}
