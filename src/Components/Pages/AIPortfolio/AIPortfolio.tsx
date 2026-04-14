@@ -140,9 +140,37 @@ IMPORTANTE: Al final de tu respuesta, debes incluir obligatoriamente un bloque d
           </div>
 
           {/* Componente del Gráfico y Lista de Pesos */}
-          <p className='print-hidden'>
+          <div className='print-hidden'>
             <PortfolioChart newData={portfolioData} />  
-          </p>
+          </div>
+
+          {/* Aviso Legal y Descargo de Responsabilidad */}
+          <hr style={{ marginTop: '2.5rem', marginBottom: '1.5rem', border: 'none', borderTop: '1px solid #000000' }} />
+          <section style={{ fontFamily: "'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif", lineHeight: 1.6, fontSize: '7px', color: '#64748b' }}>
+            <h2 style={{ fontSize: '10px', color:'#000' }}>Aviso Legal y Descargo de Responsabilidad</h2>
+            <div>
+              <h3>Propósito Informativo</h3>
+              <p>El presente <strong>Reporte Financiero</strong> y los análisis de portafolio aquí contenidos tienen un propósito única y exclusivamente informativo y educativo. Ninguna parte de este documento constituye, ni debe interpretarse como, asesoramiento financiero, de inversión, legal, fiscal o contable.</p>
+            </div>
+            <div className="disclaimer-section">
+              <h3>Uso de Inteligencia Artificial y Herramientas Cuantitativas</h3>
+              <p>Este reporte ha sido generado utilizando algoritmos cuantitativos y modelos de lenguaje de Inteligencia Artificial (IA) para procesar y estructurar datos del mercado financiero. Aunque los datos provienen de fuentes consideradas confiables y el sistema está diseñado para ofrecer evaluaciones lógicas, el usuario reconoce que los modelos algorítmicos y de IA pueden presentar errores de interpretación, desactualización de datos o <em>alucinaciones</em> inherentes a esta tecnología.</p>
+            </div>
+            <div>
+              <h3>Ausencia de Recomendación de Compra o Venta</h3>
+              <p>Las evaluaciones, diagnósticos y simulaciones de resiliencia ante recesiones no representan una oferta, solicitud o recomendación explícita para comprar, retener o vender valores, instrumentos financieros o activos digitales mencionados en este documento. Las estrategias analizadas pueden no ser adecuadas para su perfil de riesgo individual.</p>
+            </div>
+          </section>
+          <section style={{ fontFamily: "'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif", lineHeight: 1.6, fontSize: '7px', color: '#64748b' }}>
+            <div>
+              <h3>Riesgo de Inversión</h3>
+              <p>La inversión en los mercados financieros, especialmente en activos de renta variable, sectores de crecimiento (growth), criptoactivos y mercados emergentes, conlleva un <strong>alto nivel de riesgo</strong>, incluyendo la posible pérdida total del capital invertido. Rendimientos pasados no garantizan ni son indicativos de rendimientos futuros.</p>
+            </div>
+            <div style={{ marginTop: '16px' }}>
+              <h3>Exención de Responsabilidad</h3>
+              <p>El desarrollador, la plataforma y los proveedores de tecnología (incluyendo los motores de IA subyacentes) se eximen expresamente de cualquier responsabilidad, directa o indirecta, por pérdidas, daños o perjuicios económicos que pudieran derivarse del uso de la información contenida en este reporte para la toma de decisiones de inversión. <strong>Toda decisión financiera tomada con base en este documento es bajo la absoluta responsabilidad del usuario.</strong></p>
+            </div>
+          </section>
         </div>
       )}
 
