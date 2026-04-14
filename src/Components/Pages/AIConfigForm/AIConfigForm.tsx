@@ -92,6 +92,9 @@ export const AIConfigForm = () => {
             required
             style={{ padding: '0.75rem', borderRadius: '4px', border: '1px solid #ccc', fontSize: '1rem' }}
           />
+          <a href="https://aistudio.google.com/" target="_blank" rel="noopener noreferrer">
+            Obtén tu API Key aquí
+          </a>
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
